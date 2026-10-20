@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+.DS_Store
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+data/raw/
+
+# game-master notes (hidden from the learner, must not be published)
+engagement/.gm/
