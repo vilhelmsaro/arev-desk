@@ -10,3 +10,4 @@ data/raw/
 
 # game-master notes (hidden from the learner, must not be published)
 engagement/.gm/
+.claude/settings.local.json

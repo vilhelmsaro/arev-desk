@@ -28,7 +28,8 @@ Guide (the source of truth for concepts):
 5. **Verify.** Run the day's check and give Saro the commands so he can run them too. Show the numbers. If the gate
    fails, that is a good day: log it in `incidents.md` and decide (with him) whether to fix it now or carry it.
 6. **Close.** Create `sessions/DNN.md` from the template, tick the day in `PROGRESS.md`, add the hours, and name
-   tomorrow's decision so he can think about it overnight.
+   tomorrow's decision so he can think about it overnight. Log any real mistakes from the session in
+   `mistakes.md` (use the `mistakes` skill), and at the start of the next session offer to review the open ones.
 
 If Saro has only ~2 hours, do Core only. If he has 4–5, do Stretch too. Ask at the start how long he has.
 
