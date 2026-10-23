@@ -9,6 +9,7 @@ more than the correction. `Status`: **open** (not yet reviewed), **understood** 
 | 1 | D01 | open | Steering the client | Walked into discovery already sure that refunds need a human in the loop |
 | 2 | D01 | open | Cost model | Cost estimate named volume and tokens per ticket, but missed calls per ticket, input vs output pricing, and peaks |
 | 3 | D01 | open | Discovery | Called the language question "just a spec" and irrelevant for now |
+| 4 | D01 | open | Decision-making | Picked interviewees without asking what the choice leaves unknown (no IT lead) |
 
 ## Interview cheat sheet (reread before an interview)
 
@@ -25,6 +26,8 @@ more than the correction. `Status`: **open** (not yet reviewed), **understood** 
 6. **Ask for the numbers behind the numbers.** Current volume (not forecast), channel split, ticket-type mix, busiest
    day, busiest hour, and when and how fast it started growing.
 7. **Don't ask for data before you need it.** Real tickets come at the data drop (D04), not before the kickoff.
+8. **For every option, ask what it leaves unknown.** "Most valuable" isn't a reason. Name what you won't learn
+   (e.g. systems, access, constraints) and check whether that blind spot can kill the project.
 
 ---
 
@@ -71,3 +74,16 @@ more than the correction. `Status`: **open** (not yet reviewed), **understood** 
 - **Why I did it (to review):** Prioritised the bottleneck question correctly, then over-generalised that into "the
   rest doesn't matter".
 - **Next time:** Rank questions by order, not by importance. Everything on the checklist still gets asked.
+
+## 4 · D01 · Decision-making
+
+- **What I did:** Picked "support lead, frontline agent, refund approver" as the three interviews because it felt "the most
+  valuable", without giving a reason beyond that.
+- **What was wrong:** I judged the option by what it gives, not by what it leaves out. It had no IT lead, so nobody would
+  tell me about systems, data access, login or hosting rules, and deployment windows. Those constraints are what decide
+  whether a pilot is approved (guide 16.5) and are easy to discover too late.
+- **Right move:** For each option, write down what I will not learn, and ask whether that gap can kill the project. The
+  full set should cover: how the work is done, where the money goes, and what the systems allow.
+- **Why I did it (to review):** Anchored on the people closest to the work and the money, which matched my instinct.
+- **Next time:** Before picking, list for each option "what I won't know". If a blind spot covers systems, data or
+  constraints, add someone who covers it. The final pick, support lead + IT lead + finance, is decision 0001.
