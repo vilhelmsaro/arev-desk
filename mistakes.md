@@ -10,6 +10,9 @@ more than the correction. `Status`: **open** (not yet reviewed), **understood** 
 | 2 | D01 | open | Cost model | Cost estimate named volume and tokens per ticket, but missed calls per ticket, input vs output pricing, and peaks |
 | 3 | D01 | open | Discovery | Called the language question "just a spec" and irrelevant for now |
 | 4 | D01 | open | Decision-making | Picked interviewees without asking what the choice leaves unknown (no IT lead) |
+| 5 | D01 | open | Steering the client | Proposed solutions on the call (ticket system, email to finance, single source of truth) before understanding the process |
+| 6 | D01 | open | Discovery | Ended the kickoff without asking for success definition, budget signal or languages |
+| 7 | D01 | open | Cost model | Mixed up data lookups (Sheets, Gmail, ArevAdmin) with LLM calls |
 
 ## Interview cheat sheet (reread before an interview)
 
@@ -87,3 +90,37 @@ more than the correction. `Status`: **open** (not yet reviewed), **understood** 
 - **Why I did it (to review):** Anchored on the people closest to the work and the money, which matched my instinct.
 - **Next time:** Before picking, list for each option "what I won't know". If a blind spot covers systems, data or
   constraints, add someone who covers it. The final pick, support lead + IT lead + finance, is decision 0001.
+
+## 5 · D01 · Steering the client
+
+- **What I did:** On the kickoff call I proposed a ticket system or an email to finance to speed up refunds, and a
+  single source of truth, before I understood how refunds are handled or why they are slow.
+- **What was wrong:** It is the same habit as #1: bringing a solution in before the facts. The client reacted to my
+  idea, not to her own problem, and Ani pushed back ("talk to Narek first"). Solutions also anchor what she thinks
+  she is buying.
+- **Right move:** Ask what happens today and where it hurts, and keep the idea for later, after interviews and
+  numbers.
+- **Why I did it (to review):** Backend instinct to fix a bottleneck as soon as I see it.
+- **Next time:** In discovery, only questions. Write ideas on a separate "later" list.
+
+## 6 · D01 · Discovery
+
+- **What I did:** Closed the call saying "I don't think I have anything else" without asking how she defines
+  success, what the budget range is, or what languages tickets come in.
+- **What was wrong:** Those were on the D01 goal list (and on the cheat sheet, rule 3). Without a success definition I
+  cannot scope on D03, and without a budget signal I cannot size a solution.
+- **Right move:** Before ending, run the checklist silently: volumes, channels, languages, systems, budget signal,
+  success definition. Ask for what is missing even if time is short.
+- **Why I did it (to review):** The call was running out of time and I focused on the technical follow-ups.
+- **Next time:** Keep the checklist in front of me during the call and use the last two minutes on the gaps.
+
+## 7 · D01 · Cost model
+
+- **What I did:** Asked whether the LLM calls are "calls to Google Sheets, Gmail and the admin system".
+- **What was wrong:** Those are data lookups (reads from a source). LLM calls are requests to the model. They are
+  related, because lookup results go into the prompt and add input tokens, but they are priced differently and counted
+  separately.
+- **Right move:** Cost per ticket = LLM calls (tokens in and out × model price) plus lookup effort (usually cheap or
+  free, but adds tokens to the prompt). Map the lookups, then count model calls.
+- **Why I did it (to review):** Thought of each "step" in the process as one call.
+- **Next time:** Draw the pipeline and mark which steps call a model and which only read data.
