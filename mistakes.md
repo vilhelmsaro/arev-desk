@@ -7,12 +7,12 @@ more than the correction. `Status`: **open** (not yet reviewed), **understood** 
 | # | Day | Status | Category | Mistake (short) |
 |---|---|---|---|---|
 | 1 | D01 | open | Steering the client | Walked into discovery already sure that refunds need a human in the loop |
-| 2 | D01 | open | Cost model | Cost estimate named volume and tokens per ticket, but missed calls per ticket, input vs output pricing, and peaks |
+| 2 | D01 | understood | Cost model | Cost estimate named volume and tokens per ticket, but missed calls per ticket, input vs output pricing, and peaks |
 | 3 | D01 | open | Discovery | Called the language question "just a spec" and irrelevant for now |
 | 4 | D01 | open | Decision-making | Picked interviewees without asking what the choice leaves unknown (no IT lead) |
 | 5 | D01 | open | Steering the client | Proposed solutions on the call (ticket system, email to finance, single source of truth) before understanding the process |
 | 6 | D01 | open | Discovery | Ended the kickoff without asking for success definition, budget signal or languages |
-| 7 | D01 | open | Cost model | Mixed up data lookups (Sheets, Gmail, ArevAdmin) with LLM calls |
+| 7 | D01 | understood | Cost model | Mixed up data lookups (Sheets, Gmail, ArevAdmin) with LLM calls |
 
 ## Interview cheat sheet (reread before an interview)
 
